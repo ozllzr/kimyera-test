@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetSights — Search Products</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main class="app-container">
+    <section class="phone-frame">
+        <div class="phone-frame__inner">
+            <header class="status-bar"></header>
+            <div class="notch"></div>
+
+            <div class="screen-content">
+                <div class="top-bar">
+                    <div class="top-bar__left">
+                        <div class="top-bar__sub">제품 검색</div>
+                        <div class="top-bar__title">맞춤 제품 찾기</div>
+                    </div>
+                </div>
+
+                <!-- Search Input Area -->
+                <div class="search-bar" style="background: var(--color-white); border: 2px solid var(--color-main);">
+                    <span class="search-bar__icon">🔍</span>
+                    <span class="search-bar__placeholder" style="color: var(--color-text);">궁금한 제품을 검색하세요!</span>
+                </div>
+
+                <!-- Recent Searches / Recommended -->
+                <section style="margin-top: 32px;">
+                    <div class="card__header">
+                        <span class="card__title">추천 검색어</span>
+                    </div>
+                    <div class="chip-grid">
+                        <div class="select-chip">저지방 사료</div>
+                        <div class="select-chip">눈물 개선 간식</div>
+                        <div class="select-chip">노령견 영양제</div>
+                        <div class="select-chip">그레인 프리</div>
+                    </div>
+                </section>
+
+                <!-- Search Results Illustration / Empty State -->
+                <div style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0.5; margin-top: 60px;">
+                    <div style="font-size: 64px; margin-bottom: 16px;">🔍</div>
+                    <p style="font-size: 14px; font-weight: 500;">제품명을 입력하면<br>알러지 정보를 분석해 드려요</p>
+                </div>
+            </div>
+
+            <nav class="nav-bar">
+                <a href="index.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🏠</div>
+                    <div class="nav-bar__text">홈</div>
+                </a>
+                <a href="search.html" class="nav-bar__item nav-bar__item--active">
+                    <div class="nav-bar__icon">🔍</div>
+                    <div class="nav-bar__text">검색</div>
+                </a>
+                <a href="dictionary.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">📖</div>
+                    <div class="nav-bar__text">사전</div>
+                </a>
+                <a href="shopping.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🛒</div>
+                    <div class="nav-bar__text">쇼핑</div>
+                </a>
+                <a href="profile.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">👤</div>
+                    <div class="nav-bar__text">프로필</div>
+                </a>
+            </nav>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

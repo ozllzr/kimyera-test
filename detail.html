@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetSights — Product Analysis</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main class="app-container">
+    <section class="phone-frame">
+        <div class="phone-frame__inner">
+            <header class="status-bar"></header>
+            <div class="notch"></div>
+
+            <div class="screen-content">
+                <!-- Product Header -->
+                <div class="top-bar" style="margin-bottom: 16px;">
+                    <div class="top-bar__left" onclick="history.back()" style="cursor:pointer;">
+                        <div class="top-bar__sub">성분 분석 결과</div>
+                        <div class="top-bar__title">제품 상세 정보</div>
+                    </div>
+                    <div class="top-bar__action">🔗</div>
+                </div>
+
+                <!-- Product Card Area -->
+                <div class="card card--padding" style="text-align: center;">
+                    <div style="font-size: 80px; margin-bottom: 20px;">🥩</div>
+                    <div class="tag tag--warning" style="margin-bottom: 12px;">설탕이 알러지 주의 (가금류)</div>
+                    <h2 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">프리미엄 독 습식 캔 닭고기</h2>
+                    <p style="font-size: 14px; color: var(--color-text-sub);">내추럴 밸런스 · 375g</p>
+                    <div style="margin-top: 20px; font-size: 24px; font-weight: 700; color: var(--color-main-dark);">15,000원</div>
+                    <article class="card__alert">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <p class="card__alert-text">
+                            김설탕의 프로필에 등록된
+                            <span class="highlight">가금류(닭, 오리, 칠면조) 알러지</span> 성분이 포함되어 있습니다.
+                            급여 시 눈물 자국이나 가려움증을 유발할 수 있습니다.
+                        </p>
+        </article>
+                </div>
+
+                <!-- Summary Grid -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px;">
+                    <div class="card card--padding" style="padding: 16px; text-align: center;">
+                        <div style="font-size: 12px; color: var(--color-text-sub); margin-bottom: 4px;">칼로리</div>
+                        <div style="font-size: 16px; font-weight: 700;">345 kcal/can</div>
+                    </div>
+                    <div class="card card--padding" style="padding: 16px; text-align: center;">
+                        <div style="font-size: 12px; color: var(--color-text-sub); margin-bottom: 4px;">단백질</div>
+                        <div style="font-size: 16px; font-weight: 700;">9.0% (Min)</div>
+                    </div>
+                </div>
+
+                <!-- Analysis Details -->
+                <section>
+                    <div class="card__header">
+                        <span class="card__title">주요 성분 분석</span>
+                        <span class="card__more">전체 보기</span>
+                    </div>
+                    <div class="card card--padding" style="padding: 10px 20px;">
+                        <div class="ingredient-row ingredient-row--border">
+                            <div class="ingredient-row__icon-box">🍗</div>
+                            <div class="ingredient-row__info">
+                                <div class="ingredient-row__name">닭고기 (Chicken)</div>
+                                <div class="ingredient-row__role">주단백질원 · 고단백</div>
+                            </div>
+                            <span class="tag tag--warning">알러지</span>
+                        </div>
+                        <div class="ingredient-row ingredient-row--border">
+                            <div class="ingredient-row__icon-box">🍚</div>
+                            <div class="ingredient-row__info">
+                                <div class="ingredient-row__name">현미 (Brown Rice)</div>
+                                <div class="ingredient-row__role">탄수화물 · 식이섬유</div>
+                            </div>
+                            <span class="tag tag--safe">안전</span>
+                        </div>
+                        <div class="ingredient-row ingredient-row--border">
+                            <div class="ingredient-row__icon-box">🥕</div>
+                            <div class="ingredient-row__info">
+                                <div class="ingredient-row__name">당근 (Carrots)</div>
+                                <div class="ingredient-row__role">비타민A · 항산화</div>
+                            </div>
+                            <span class="tag tag--safe">안전</span>
+                        </div>
+                        <div class="ingredient-row ingredient-row--border">
+                            <div class="ingredient-row__icon-box">🧪</div>
+                            <div class="ingredient-row__info">
+                                <div class="ingredient-row__name">혼합 토코페롤</div>
+                                <div class="ingredient-row__role">천연 보존제</div>
+                            </div>
+                            <span class="tag tag--safe">안전</span>
+                        </div>
+                        <div class="ingredient-row">
+                            <div class="ingredient-row__icon-box">💊</div>
+                            <div class="ingredient-row__info">
+                                <div class="ingredient-row__name">비타민 D3</div>
+                                <div class="ingredient-row__role">칼슘 흡수 보조</div>
+                            </div>
+                            <span class="tag tag--safe">안전</span>
+                        </div>
+                    </div>
+                </section>
+
+                <div style="margin-top: 32px; padding-bottom: 40px;">
+                    <a href="shopping.html" class="button button--cta">최저가 구매하러 가기</a>
+                </div>
+            </div>
+
+            <nav class="nav-bar">
+                <a href="index.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🏠</div>
+                    <div class="nav-bar__text">홈</div>
+                </a>
+                <a href="search.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🔍</div>
+                    <div class="nav-bar__text">검색</div>
+                </a>
+                <a href="dictionary.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">📖</div>
+                    <div class="nav-bar__text">사전</div>
+                </a>
+                <a href="shopping.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🛒</div>
+                    <div class="nav-bar__text">쇼핑</div>
+                </a>
+                <a href="profile.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">👤</div>
+                    <div class="nav-bar__text">프로필</div>
+                </a>
+            </nav>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

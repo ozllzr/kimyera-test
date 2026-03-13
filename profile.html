@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetSights — Profile Setup</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main class="app-container">
+    <section class="phone-frame">
+        <div class="phone-frame__inner">
+            <header class="status-bar"></header>
+            <div class="notch"></div>
+
+            <div class="screen-content" style="padding-top: 20px;">
+                <!-- 4-Step Navigation Bar -->
+                <nav class="step-nav">
+                    <div class="step-nav__item step-nav__item--done">
+                        <div class="step-nav__circle">1</div>
+                        <div class="step-nav__text">기본 정보</div>
+                    </div>
+                    <div class="step-nav__item step-nav__item--done">
+                        <div class="step-nav__circle">2</div>
+                        <div class="step-nav__text">식습관</div>
+                    </div>
+                    <div class="step-nav__item step-nav__item--done">
+                        <div class="step-nav__circle">3</div>
+                        <div class="step-nav__text">건강 상태</div>
+                    </div>
+                    <div class="step-nav__item step-nav__item--active">
+                        <div class="step-nav__circle">4</div>
+                        <div class="step-nav__text">프로필 관리</div>
+                    </div>
+                </nav>
+
+                <div class="top-bar" style="margin-bottom: 24px; padding-top: 0;">
+                    <div class="top-bar__left" onclick="history.back()" style="cursor:pointer;">
+                        <div class="top-bar__sub">프로필 설정</div>
+                        <div class="top-bar__title">반려동물 마이페이지</div>
+                    </div>
+                </div>
+
+                <!-- Pet Selector (Scaled 20%) -->
+                <div class="chip-grid" style="margin-bottom: 32px;">
+                    <div class="pet-chip pet-chip--active">
+                        <div style="font-size: 32px;">🐕</div>
+                        <div style="font-size: 15px; font-weight: 700;">김설탕</div>
+                    </div>
+                    <div class="pet-chip" style="opacity: 0.6;">
+                        <div style="font-size: 32px;">➕</div>
+                        <div style="font-size: 15px; font-weight: 700;">추가</div>
+                    </div>
+                </div>
+
+                <!-- Allergy Picker (Scaled Height) -->
+                <section>
+                    <div class="card__header">
+                        <span class="card__title">⚠️ 알러지 유발 성분</span>
+                        <span class="top-bar__sub">복수 선택 가능</span>
+                    </div>
+                    <div class="chip-grid" style="padding: 12px 0;">
+                        <div class="select-chip select-chip--selected">🍗 닭고기</div>
+                        <div class="select-chip select-chip--selected">🦆 오리고기</div>
+                        <div class="select-chip select-chip--selected">🦃 칠면조</div>
+                        <div class="select-chip">🐄 소고기</div>
+                        <div class="select-chip">🐑 양고기</div>
+                        <div class="select-chip">🐟 생선/연어</div>
+                        <div class="select-chip">🌾 밀/글루텐</div>
+                        <div class="select-chip">🥛 유제품</div>
+                        <div class="select-chip">🥚 달걀</div>
+                        <div class="select-chip">🥜 대두/콩</div>
+                        <div class="select-chip">🌽 옥수수</div>
+                        <div class="select-chip" style="border: 1px dashed var(--color-main);">➕ 직접 입력</div>
+                    </div>
+                </section>
+
+                <!-- Health Condition Checker -->
+                <section style="margin-top: 32px;">
+                    <div class="card__header">
+                        <span class="card__title">🏥 기저 질환 유무</span>
+                    </div>
+                    <div class="check-list" style="padding: 12px 0;">
+                        <div class="check-item check-item--active">
+                            <div style="font-size: 18px;">❤️</div>
+                            <div style="font-size: 14px; font-weight: 600;">심장 질환</div>
+                            <div class="check-item__box"></div>
+                        </div>
+                        <div class="check-item">
+                            <div style="font-size: 18px;">🩸</div>
+                            <div style="font-size: 14px; font-weight: 600;">당뇨 (Diabetes)</div>
+                            <div class="check-item__box"></div>
+                        </div>
+                        <div class="check-item">
+                            <div style="font-size: 18px;">🦴</div>
+                            <div style="font-size: 14px; font-weight: 600;">고관절/슬개골/관절염</div>
+                            <div class="check-item__box"></div>
+                        </div>
+                        <div class="check-item">
+                            <div style="font-size: 18px;">🧠</div>
+                            <div style="font-size: 14px; font-weight: 600;">인지 기능 장애</div>
+                            <div class="check-item__box"></div>
+                        </div>
+                        <div class="check-item" style="border: 1px dashed var(--color-main); background: transparent; box-shadow: none;">
+                            <div style="font-size: 18px; color: var(--color-main-dark);">➕</div>
+                            <div style="font-size: 14px; font-weight: 600;">직접 입력</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Profile Save Button (Scaled) -->
+                <div style="margin-top: 40px; display: flex; justify-content: center; padding-bottom: 40px;">
+                    <button class="button button--fill button--profile-save" onclick="location.href='index.html'">프로필 저장하기</button>
+                </div>
+            </div>
+
+            <nav class="nav-bar">
+                <a href="index.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🏠</div>
+                    <div class="nav-bar__text">홈</div>
+                </a>
+                <a href="search.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🔍</div>
+                    <div class="nav-bar__text">검색</div>
+                </a>
+                <a href="dictionary.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">📖</div>
+                    <div class="nav-bar__text">사전</div>
+                </a>
+                <a href="shopping.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🛒</div>
+                    <div class="nav-bar__text">쇼핑</div>
+                </a>
+                <a href="profile.html" class="nav-bar__item nav-bar__item--active">
+                    <div class="nav-bar__icon">👤</div>
+                    <div class="nav-bar__text">프로필</div>
+                </a>
+            </nav>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

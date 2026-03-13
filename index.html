@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetSights — Home</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main class="app-container">
+    <section class="phone-frame">
+        <div class="phone-frame__inner">
+            <header class="status-bar"></header>
+            <div class="notch"></div>
+
+            <div class="screen-content">
+                <!-- Top bar with Detailed Pet Profile -->
+                <div class="top-bar" style="align-items: flex-start; margin-bottom: 20px;">
+                    <div class="top-bar__left">
+                        <div class="top-bar__sub">반가워요 👋</div>
+                        <div class="top-bar__title">김설탕 보호자님</div>
+                        <div class="card card--padding" style="padding: 10px 20px;">
+                        <div style="font-size: 16px; color: var(--color-text-sub); margin-top: 4px; font-weight: 500;">
+                            김설탕 · 믹스견 · 6세
+                        </div>
+                        <div class="chip-grid" style="margin-top: 8px; gap: 4px;">
+                            <span class="tag tag--caution">가금류 알러지(닭, 오리, 칠면조)</span>
+                            <span class="tag tag--caution">소</span>
+                            <span class="tag tag--normal-purple">슬개골</span>
+                        </div>
+                    </div>
+                    </div>
+                    <a href="profile.html" class="top-bar__action" style="overflow: hidden; border: 2px solid var(--color-main);">
+                        <div style="font-size: 24px;">🐕</div>
+                    </a>
+                </div>
+
+                <!-- Scan hero with Tri-mode options -->
+                <section class="scan-hero" style="padding: 24px 20px;">
+                    <h3 class="scan-hero__title">성분 분석 스캔</h3>
+                    <p class="scan-hero__desc">사료나 간식의 성분을 분석하는 3가지 방법</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 4px;">
+                        <button class="button button--fill" style="flex-direction: column; height: 84px; font-size: 11px; gap: 6px; background: var(--color-white); color: var(--color-text); box-shadow: var(--shadow-soft);">
+                            <span style="font-size: 24px;">📷</span>
+                            카메라 촬영
+                        </button>
+                        <button class="button button--fill" style="flex-direction: column; height: 84px; font-size: 11px; gap: 6px; background: var(--color-white); color: var(--color-text); box-shadow: var(--shadow-soft);">
+                            <span style="font-size: 24px;">🖼️</span>
+                            이미지 업로드
+                        </button>
+                        <button class="button button--fill" style="flex-direction: column; height: 84px; font-size: 11px; gap: 6px; background: var(--color-white); color: var(--color-text); box-shadow: var(--shadow-soft);">
+                            <span style="font-size: 24px;">🔗</span>
+                            링크 분석
+                        </button>
+                    </div>
+                </section>
+
+                <!-- 성분 사전 검색 (Wrapped module) -->
+                <section style="margin-bottom: 24px;">
+                    <div class="card__header">
+                    <div class="card__title">성분 사전 검색</div>
+                    </div>
+                    <div class="search-bar search-bar--primary" onclick="location.href='dictionary.html'" style="cursor:pointer; padding: 14px 18px;">
+                        <span class="search-bar__icon">🔍</span>
+                        <span class="search-bar__placeholder">궁금한 성분을 빠르게 검색해보세요! (예: BHA)</span>
+                    </div>
+                </section>
+
+                <!-- 최근 구경한 제품 (Carousel Form) -->
+                <section>
+                    <div class="card__header">
+                        <span class="card__title">최근 구경한 제품</span>
+                        <a href="shopping.html" class="card__more">전체보기</a>
+                    </div>
+                    <div class="carousel">
+                        <a href="detail.html" class="product-card">
+                            <div class="product-card__thumb">🥩</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name">프리미엄 독 습식 캔 닭고기</div>
+                                <div class="product-card__status" style="color: var(--color-red);">⚠ 알러지 위험</div>
+                                <div class="product-card__more-hint">자세히 보기 <i class="fa-solid fa-chevron-right" style="font-size: 8px;"></i></div>
+                            </div>
+                        </a>
+                        <a href="detail.html" class="product-card">
+                            <div class="product-card__thumb">🐟</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name">네이처브릿지 연어 현미</div>
+                                <div class="product-card__status" style="color: var(--color-mint);">안전 성분</div>
+                                <div class="product-card__more-hint">자세히 보기 <i class="fa-solid fa-chevron-right" style="font-size: 8px;"></i></div>
+                            </div>
+                        </a>
+                        <!-- ... (Carousel items keep same as before) -->
+                        <a href="detail.html" class="product-card">
+                            <div class="product-card__thumb">🦆</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name">오리 가슴살 육포</div>
+                                <div class="product-card__status" style="color: var(--color-pink);">성분 주의</div>
+                                <div class="product-card__more-hint">자세히 보기 <i class="fa-solid fa-chevron-right" style="font-size: 8px;"></i></div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- 주의 해야 할 성분 (6 items, tags on the right) -->
+                <section style="margin-top: 24px;">
+                    <div class="card__header">
+                        <span class="card__title">주의 해야할 성분</span>
+                        <a href="dictionary.html" class="card__more">전체보기</a>
+                    </div>
+                    <div class="card card--padding" style="padding: 10px 20px;">
+                        <div class="ingredient-row ingredient-row--border">
+                            <div class="ingredient-row__icon-box">☠️</div>
+                            <div class="ingredient-row__info">
+                                <div class="ingredient-row__name">자일리톨</div>
+                                <div class="ingredient-row__role">저혈당 및 간부전 유발</div>
+                            </div>
+                            <span class="tag tag--warning">위험</span>
+                        </div>
+                        <div class="ingredient-row ingredient-row--border">
+                            <div class="ingredient-row__icon-box">🍫</div>
+                            <div class="ingredient-row__info">
+                                <div class="ingredient-row__name">초콜릿</div>
+                                <div class="ingredient-row__role">테오브로민 중독 위험</div>
+                            </div>
+                            <span class="tag tag--warning">위험</span>
+                        </div>
+                        <div class="ingredient-row ingredient-row--border">
+                            <div class="ingredient-row__icon-box">🍇</div>
+                            <div class="ingredient-row__info">
+                                <div class="ingredient-row__name">포도/건포도</div>
+                                <div class="ingredient-row__role">급성 신부전 가능성</div>
+                            </div>
+                            <span class="tag tag--warning">위험</span>
+                        </div>
+                        <div class="ingredient-row ingredient-row--border">
+                            <div class="ingredient-row__icon-box">🧅</div>
+                            <div class="ingredient-row__info">
+                                <div class="ingredient-row__name">양파/마늘</div>
+                                <div class="ingredient-row__role">적혈구 파괴 및 빈혈 유발</div>
+                            </div>
+                            <span class="tag tag--warning">위험</span>
+                        </div>
+                        <div class="ingredient-row ingredient-row--border">
+                            <div class="ingredient-row__icon-box">☕</div>
+                            <div class="ingredient-row__info">
+                                <div class="ingredient-row__name">카페인</div>
+                                <div class="ingredient-row__role">심박수 증가 및 발작 위험</div>
+                            </div>
+                            <span class="tag tag--warning">위험</span>
+                        </div>
+                        <div class="ingredient-row">
+                            <div class="ingredient-row__icon-box">🌰</div>
+                            <div class="ingredient-row__info">
+                                <div class="ingredient-row__name">마카다미아</div>
+                                <div class="ingredient-row__role">근육 마비 및 구토 유발</div>
+                            </div>
+                            <span class="tag tag--warning">위험</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <nav class="nav-bar">
+                <a href="index.html" class="nav-bar__item nav-bar__item--active">
+                    <div class="nav-bar__icon">🏠</div>
+                    <div class="nav-bar__text">홈</div>
+                </a>
+                <a href="search.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🔍</div>
+                    <div class="nav-bar__text">검색</div>
+                </a>
+                <a href="dictionary.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">📖</div>
+                    <div class="nav-bar__text">사전</div>
+                </a>
+                <a href="shopping.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🛒</div>
+                    <div class="nav-bar__text">쇼핑</div>
+                </a>
+                <a href="profile.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">👤</div>
+                    <div class="nav-bar__text">프로필</div>
+                </a>
+            </nav>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

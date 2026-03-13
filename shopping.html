@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetSights — Shopping</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main class="app-container">
+    <section class="phone-frame">
+        <div class="phone-frame__inner">
+            <header class="status-bar"></header>
+            <div class="notch"></div>
+
+            <div class="screen-content">
+                <div class="top-bar">
+                    <div class="top-bar__left">
+                        <div class="top-bar__sub">맞춤 쇼핑</div>
+                        <div class="top-bar__title">안전한 먹거리</div>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="chip-grid" style="overflow-x: auto; padding-bottom: 8px; flex-wrap: nowrap; scrollbar-width: none;">
+                    <div class="select-chip select-chip--selected" style="flex-shrink: 0;">건식</div>
+                    <div class="select-chip" style="flex-shrink: 0;">동결건조</div>
+                    <div class="select-chip" style="flex-shrink: 0;">습식</div>
+                    <div class="select-chip" style="flex-shrink: 0;">자연식</div>
+                </div>
+
+                <!-- Product Grid (5 rows = 10 items) -->
+                <section style="margin-top: 20px;">
+                    <div class="product-grid product-grid--spaced">
+                        <!-- Row 1 -->
+                        <div class="product-card">
+                            <div class="product-card__thumb">🍗</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name">그레인프리 치킨 키블</div>
+                                <div class="product-card__price">18,500원</div>
+                                <div class="product-card__status" style="color: var(--color-mint);">적합도 99%</div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__thumb">🦆</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name">저알러지 오리 건식</div>
+                                <div class="product-card__price">22,000원</div>
+                                <div class="product-card__status" style="color: var(--color-mint);">적합도 95%</div>
+                            </div>
+                        </div>
+                        <!-- Row 2 -->
+                        <div class="product-card">
+                            <div class="product-card__thumb">🥩</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name">수비드 소고기 건식</div>
+                                <div class="product-card__price">24,500원</div>
+                                <div class="product-card__status" style="color: var(--color-pink);">성분 주의</div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__thumb">🐟</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name">흰살생선 저지방 건식</div>
+                                <div class="product-card__price">19,800원</div>
+                                <div class="product-card__status" style="color: var(--color-mint);">적합도 98%</div>
+                            </div>
+                        </div>
+                        <!-- Row 3 -->
+                        <div class="product-card">
+                            <div class="product-card__thumb">🥓</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name">램 & 라이스 퍼피용</div>
+                                <div class="product-card__price">21,000원</div>
+                                <div class="product-card__status" style="color: var(--color-mint);">적합도 92%</div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__thumb">🍲</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name">다이어트 케어 건식</div>
+                                <div class="product-card__price">23,000원</div>
+                                <div class="product-card__status" style="color: var(--color-mint);">적합도 90%</div>
+                            </div>
+                        </div>
+                        <!-- Row 4 -->
+                        <div class="product-card">
+                            <div class="product-card__thumb">🦴</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name">관절 강화 건강 사료</div>
+                                <div class="product-card__price">28,000원</div>
+                                <div class="product-card__status" style="color: var(--color-mint);">적합도 94%</div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__thumb">🌿</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name">유기농 베지 키블</div>
+                                <div class="product-card__price">32,000원</div>
+                                <div class="product-card__status" style="color: var(--color-mint);">적합도 91%</div>
+                            </div>
+                        </div>
+                        <!-- Row 5 -->
+                        <div class="product-card">
+                            <div class="product-card__thumb">🐔</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name">어덜트 닭고기 레시피</div>
+                                <div class="product-card__price">17,000원</div>
+                                <div class="product-card__status" style="color: var(--color-red);">알러지 위험</div>
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card__thumb">🥚</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name">영양 가득 에그 사료</div>
+                                <div class="product-card__price">20,500원</div>
+                                <div class="product-card__status" style="color: var(--color-mint);">적합도 88%</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button class="button button--shopping-more">제품 더보기 +</button>
+                </section>
+            </div>
+
+            <nav class="nav-bar">
+                <a href="index.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🏠</div>
+                    <div class="nav-bar__text">홈</div>
+                </a>
+                <a href="search.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🔍</div>
+                    <div class="nav-bar__text">검색</div>
+                </a>
+                <a href="dictionary.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">📖</div>
+                    <div class="nav-bar__text">사전</div>
+                </a>
+                <a href="shopping.html" class="nav-bar__item nav-bar__item--active">
+                    <div class="nav-bar__icon">🛒</div>
+                    <div class="nav-bar__text">쇼핑</div>
+                </a>
+                <a href="profile.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">👤</div>
+                    <div class="nav-bar__text">프로필</div>
+                </a>
+            </nav>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

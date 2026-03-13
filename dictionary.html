@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetSights — Dictionary</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main class="app-container">
+    <section class="phone-frame">
+        <div class="phone-frame__inner">
+            <header class="status-bar"></header>
+            <div class="notch"></div>
+
+            <div class="screen-content">
+                <div class="top-bar">
+                    <div class="top-bar__left">
+                        <div class="top-bar__sub">성분 사전</div>
+                        <div class="top-bar__title">원료 백과</div>
+                    </div>
+                </div>
+
+                <!-- Active search -->
+                <div class="search-bar" style="background: var(--color-white); border: 2px solid var(--color-main);">
+                    <span class="search-bar__icon">🔍</span>
+                    <span class="search-bar__placeholder" style="color: var(--color-text);">토코페롤</span>
+                    <span style="color: var(--color-main); font-size: 14px;">✕</span>
+                </div>
+
+                <!-- Result card (Refined) -->
+                <article class="card card--padding" style="margin-top: 24px;">
+                    <div class="top-bar__sub">Tocopherol / Vitamin E</div>
+                    <h3 class="top-bar__title" style="margin: 4px 0 12px;">토코페롤</h3>
+                    <div class="chip-grid">
+                        <span class="tag tag--safe">✓ 안전 성분</span>
+                        <span class="tag tag--fill" style="color: var(--color-main-dark);">천연 보존제</span>
+                    </div>
+                    <p style="font-size: 13px; color: var(--color-text-sub); margin-top: 16px; line-height: 1.6;">
+                        비타민E의 일종으로 사료의 산화를 막는 <strong style="color: var(--color-main-dark);">천연 보존제</strong>입니다. 합성 보존료보다 안전하며 면역력 강화에 도움을 줍니다.
+                    </p>
+
+                    <!-- 설탕이 팁 모듈 -->
+                    <div style="background: var(--color-bg-alt); padding: 16px; border-radius: 16px; margin-top: 20px;">
+                        <div style="font-size: 14px; font-weight: 700; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+                            
+                            <span><i class="fa-solid fa-circle-exclamation"></i></span>
+                            <span>설탕이에게</span>
+                        </div>
+                        <p style="font-size: 12px; color: var(--color-text-sub); line-height: 1.5;">
+                            가금류 알러지와 무관한 안전한 성분입니다. 신장 보호에도 도움이 됩니다.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- 관련 성분 -->
+                <section style="margin-top: 32px;">
+                    <div class="card__header">
+                        <span class="card__title">관련 성분</span>
+                    </div>
+                    <div class="chip-grid" style="padding: 12px 0;">
+                        <span class="select-chip" style="font-size: 14px; gap: 4px;"> BHA <span style="color: var(--color-red);">⚠️</span></span>
+                        <span class="select-chip" style="font-size: 14px; gap: 4px;"> BHT <span style="color: var(--color-red);">⚠️</span></span>
+                        <span class="select-chip" style="font-size: 14px; gap: 4px;"> 혼합 토코페롤 <span style="color: var(--color-mint);">✅</span></span>
+                        <span class="select-chip" style="font-size: 14px; gap: 4px;">🍊 아스코르빈산 <span style="color: var(--color-mint);">✅</span></span>
+                        <span class="select-chip" style="font-size: 14px; gap: 4px;">🌿 로즈마리 추출물 <span style="color: var(--color-mint);">✅</span></span>
+                    </div>
+                </section>
+
+                <!-- 많이 검색한 성분 리스트 -->
+                <section style="margin-top: 24px;">
+                    <div class="card__header">
+                        <span class="card__title">많이 검색한 성분 리스트</span>
+                    </div>
+                    <div class="card card--padding" style="padding: 10px 20px;">
+                        <div class="ingredient-row ingredient-row--border">
+                            <div class="ingredient-row__icon-box">🥗</div>
+                            <div class="ingredient-row__info">
+                                <div class="ingredient-row__name">로즈마리 추출물</div>
+                                <div class="ingredient-row__role">천연 산화 방지제</div>
+                            </div>
+                            <span class="tag tag--safe">안전</span>
+                        </div>
+                        <div class="ingredient-row ingredient-row--border">
+                            <div class="ingredient-row__icon-box">🍊</div>
+                            <div class="ingredient-row__info">
+                                <div class="ingredient-row__name">아스코르빈산</div>
+                                <div class="ingredient-row__role">비타민 C · 면역 보조</div>
+                            </div>
+                            <span class="tag tag--safe">안전</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 제품 추천 섹션 -->
+                <section style="margin-top: 32px; padding-bottom: 20px;">
+                    <div class="card__title">
+                        포함된 제품을 추천해 드려요!
+                    </div>
+                    <div class="carousel" style="padding-bottom: 10px;">
+                        <div class="product-card" style="flex: 0 0 140px; min-height: 180px;">
+                            <div class="product-card__thumb" style="height: 100px;">🍗</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name" style="font-size: 12px;">닭고기 키블 프리미엄</div>
+                                <div class="product-card__price" style="font-size: 13px;">18,000원</div>
+                            </div>
+                        </div>
+                        <div class="product-card" style="flex: 0 0 140px; min-height: 180px;">
+                            <div class="product-card__thumb" style="height: 100px;">🦆</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name" style="font-size: 12px;">오리고기 벨런스 사료</div>
+                                <div class="product-card__price" style="font-size: 13px;">22,000원</div>
+                            </div>
+                        </div>
+                        <div class="product-card" style="flex: 0 0 140px; min-height: 180px;">
+                            <div class="product-card__thumb" style="height: 100px;">🥩</div>
+                            <div class="product-card__body">
+                                <div class="product-card__name" style="font-size: 12px;">소고기 믹스 키블</div>
+                                <div class="product-card__price" style="font-size: 13px;">25,000원</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <nav class="nav-bar">
+                <a href="index.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🏠</div>
+                    <div class="nav-bar__text">홈</div>
+                </a>
+                <a href="search.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🔍</div>
+                    <div class="nav-bar__text">검색</div>
+                </a>
+                <a href="dictionary.html" class="nav-bar__item nav-bar__item--active">
+                    <div class="nav-bar__icon">📖</div>
+                    <div class="nav-bar__text">사전</div>
+                </a>
+                <a href="shopping.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">🛒</div>
+                    <div class="nav-bar__text">쇼핑</div>
+                </a>
+                <a href="profile.html" class="nav-bar__item">
+                    <div class="nav-bar__icon">👤</div>
+                    <div class="nav-bar__text">프로필</div>
+                </a>
+            </nav>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
